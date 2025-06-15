@@ -10,7 +10,8 @@ abstract class RestService {
             method: 'GET',
             body: JSON.stringify(params),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
             }
         });
         return await response.json();
@@ -21,7 +22,8 @@ abstract class RestService {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
             }
         });
         return await response.json();

@@ -19,11 +19,11 @@ export const Header = () => {
                 {/* Columna texto */}
                 <div className="w-full md:w-1/2">
                     <h1 className="text-4xl font-extrabold sm:text-6xl leading-tight mb-6">
-                        The palace of<br /> your DREAM
+                        El palacion en el<br /> CIELO
                     </h1>
                     <p className="text-lg text-white/80 mb-8 max-w-md">
-                    Handcrafted real estate designed for your next strategic acquisition: mansions, corporate residences, private retreats, or high-yield investments. 
-                    Each property comes with a refreshing architectural design and everything you need to solidify your next elite wealth move.
+                    Bienes raíces diseñados a medida para su próxima adquisición estratégica: mansiones, residencias corporativas, retiros privados o inversiones de alto rendimiento.
+                    Cada propiedad cuenta con un diseño arquitectónico innovador y todo lo necesario para consolidar su próxima inversión de patrimonio de élite.
                     </p>
 
                     <div className="flex items-center gap-4">
@@ -31,11 +31,11 @@ export const Header = () => {
                             href="#"
                             className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition"
                         >
-                            Get Started →
+                            Empezar →
                         </a>
                         <a href="#" className="text-white/80 hover:text-white flex items-center gap-2">
                             <span className="inline-block w-3 h-3 bg-white rounded-full animate-ping" />
-                            Get meet
+                            Conocenos
                         </a>
                     </div>
                 </div>

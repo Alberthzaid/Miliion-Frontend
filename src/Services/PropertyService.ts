@@ -3,7 +3,7 @@ import RestService from "./RestService";
 
 class PropertyService extends RestService {
     constructor() {
-        super('https://millionsback.azurewebsites.net/api/Property');
+        super('https://million.azurewebsites.net/api/Property');
     }
 
 
