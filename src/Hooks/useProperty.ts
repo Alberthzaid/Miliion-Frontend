@@ -82,7 +82,8 @@ export const useProperty = () => {
 
 
   useEffect(() => {
-    const subscription = watch((value, { name, type }) => {
+    //ts-ignore
+    const subscription = watch((_value, { type }) => {
       if (type === 'change') {
         const timeoutId = setTimeout(() => {
           fetchFilteredProperties();
