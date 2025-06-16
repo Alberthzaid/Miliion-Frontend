@@ -58,7 +58,7 @@ export const HomeLayout = () => {
                   <div className="flex items-center justify-center h-full">
                     <div className="text-center">
                       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-                      <p className="text-zinc-400">Cargando propiedades...</p>
+                      <p className="text-zinc-400">Loading ...</p>
                     </div>
                   </div>
                 ) : property.length > 0 ? (
@@ -71,8 +71,8 @@ export const HomeLayout = () => {
                 ) : (
                   <div className="flex items-center justify-center h-full">
                     <div className="text-center">
-                      <p className="text-zinc-400 text-lg mb-2">No se encontraron propiedades</p>
-                      <p className="text-zinc-500 text-sm">Intenta ajustar los filtros de búsqueda</p>
+                      <p className="text-zinc-400 text-lg mb-2">Property not found</p>
+                      <p className="text-zinc-500 text-sm">Try adjusting your search filters</p>
                     </div>
                   </div>
                 )}

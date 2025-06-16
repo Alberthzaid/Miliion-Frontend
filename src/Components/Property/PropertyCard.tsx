@@ -8,7 +8,7 @@ type Props = {
 export const PropertyCard = ({ propertyProfile , formatPrice }: Props) => {
   return (
     <>
-         {/* Card de la Propiedad */}
+      
       <div className="relative max-w-3xl w-full bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl p-6">
         <img
           src={propertyProfile.image.fileLink}
@@ -23,7 +23,7 @@ export const PropertyCard = ({ propertyProfile , formatPrice }: Props) => {
         </div>
 
         <div className="absolute bottom-4 right-4 bg-white/10 px-4 py-2 rounded-full text-sm text-white shadow-lg">
-          ID Propiedad: {propertyProfile.id}
+          ID property: {propertyProfile.id}
         </div>
       </div>
     </>

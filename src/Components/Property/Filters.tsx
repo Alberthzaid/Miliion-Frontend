@@ -77,12 +77,12 @@ export function Filters({
       {/* Filtro por Nombre */}
       <div>
         <Label htmlFor="name" className="text-zinc-300 text-sm font-medium mb-2 block">
-          Nombre de la propiedad
+          Name
         </Label>
         <Input
           id="name"
           type="text"
-          placeholder="Buscar por nombre..."
+          placeholder="Search by name..."
           value={localName}
           onChange={handleNameChange}
           className="bg-zinc-800 border-zinc-700 focus:ring-2 focus:ring-blue-500 text-white placeholder:text-zinc-500"
@@ -92,12 +92,12 @@ export function Filters({
       {/* Filtro por Dirección */}
       <div>
         <Label htmlFor="address" className="text-zinc-300 text-sm font-medium mb-2 block">
-          Dirección
+          Location
         </Label>
         <Input
           id="address"
           type="text"
-          placeholder="Buscar por dirección..."
+          placeholder="Search by address..."
           value={localAddress}
           onChange={handleAddressChange}
           className="bg-zinc-800 border-zinc-700 focus:ring-2 focus:ring-blue-500 text-white placeholder:text-zinc-500"
@@ -107,12 +107,12 @@ export function Filters({
       {/* Filtro por Rango de Precio */}
       <div>
         <Label className="text-zinc-300 text-sm font-medium mb-3 block">
-          Rango de Precio
+          Range price
         </Label>
         
         {/* Precio Mínimo */}
         <div className="mb-3">
-          <Label className="text-zinc-400 text-xs mb-1 block">Precio Mínimo</Label>
+          <Label className="text-zinc-400 text-xs mb-1 block">Min price</Label>
           <input
             type="range"
             min={minPrice}
@@ -125,7 +125,7 @@ export function Filters({
 
         {/* Precio Máximo */}
         <div className="mb-3">
-          <Label className="text-zinc-400 text-xs mb-1 block">Precio Máximo</Label>
+          <Label className="text-zinc-400 text-xs mb-1 block">Max price</Label>
           <input
             type="range"
             min={minPrice}
@@ -155,7 +155,7 @@ export function Filters({
           disabled={isLoading}
           className="w-full bg-blue-600 hover:bg-blue-700 disabled:opacity-50"
         >
-          {isLoading ? 'Buscando...' : 'Buscar Propiedades'}
+          {isLoading ? 'Searching ...' : 'Search Properties'}
         </Button>
         <Button 
           variant="secondary" 
@@ -163,11 +163,9 @@ export function Filters({
           disabled={isLoading}
           className="w-full bg-zinc-700 hover:bg-zinc-600 disabled:opacity-50"
         >
-          Limpiar Filtros
+          Clear
         </Button>
       </div>
-
-      {/* Indicador de carga */}
       {isLoading && (
         <div className="flex items-center justify-center py-4">
           <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-500"></div>

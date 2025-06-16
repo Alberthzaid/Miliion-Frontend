@@ -12,7 +12,7 @@ export const CountUpGrid = () => {
           duration={2}
           className="text-5xl font-bold text-white-600"
         />
-        <p className="mt-2 text-lg text-gray-600">Clientes satisfechos</p>
+        <p className="mt-2 text-lg text-gray-600">Clients</p>
       </div>
 
       <div>
@@ -24,7 +24,7 @@ export const CountUpGrid = () => {
           duration={1.5}
           className="text-5xl font-bold text-white-600"
         />
-        <p className="mt-2 text-lg text-gray-600">Proyectos completados</p>
+        <p className="mt-2 text-lg text-gray-600">Projects</p>
       </div>
 
       <div>
@@ -36,7 +36,7 @@ export const CountUpGrid = () => {
           duration={2}
           className="text-5xl font-bold text-white-600"
         />
-        <p className="mt-2 text-lg text-gray-600">Reconocimientos</p>
+        <p className="mt-2 text-lg text-gray-600">Recognitions</p>
       </div>
     </div>
   );
