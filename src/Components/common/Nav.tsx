@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     /*  ↑ el nav queda flotando sobre el header */
-    <nav className="absolute top-0 left-0 right-0 z-50 ">
+    <nav className="absolute top-0 left-0 right-0 z-50  bg-black/70 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
